@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.neurallift.keuanganku.ui.home.HomeFragment"
+        android:label="@string/beranda"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_akun"
+        android:name="com.neurallift.keuanganku.ui.akun.fragment.AkunFragment"
+        android:label="@string/akun"
+        tools:layout="@layout/fragment_akun" />
+
+    <fragment
+        android:id="@+id/navigation_kasir"
+        android:name="com.neurallift.keuanganku.ui.kasir.fragment.KasirFragment"
+        android:label="@string/kasir"
+        tools:layout="@layout/fragment_kasir"
+        />
+
+    <fragment
+        android:id="@+id/navigation_kasir_tambah_barang"
+        android:name="com.neurallift.keuanganku.ui.kasir.fragment.KasirTambahBarangFragment"
+        android:label="@string/tambah_barang"
+        tools:layout="@layout/fragment_kasir_tambah_barang"
+        />
+
+    <fragment
+        android:id="@+id/navigation_kasir_pembayaran"
+        android:name="com.neurallift.keuanganku.ui.kasir.fragment.KasirPembayaranFragment"
+        android:label="@string/pembayaran"
+        tools:layout="@layout/fragment_kasir_pembayaran"
+        >
+        <argument
+            android:name="total_pembayaran"
+            app:argType="float" />
+
+        <argument
+            android:name="barangList"
+
+            app:argType="com.neurallift.keuanganku.data.model.Barang" />
+
+        <argument
+            android:name="jumlahList"
+            app:argType="integer[]" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_kasir_invoice"
+        android:name="com.neurallift.keuanganku.ui.kasir.fragment.KasirInvoiceFragment"
+        android:label="@string/invoice"
+        tools:layout="@layout/fragment_kasir_invoice"
+        >
+
+        <argument
+            android:name="total_pembayaran"
+            app:argType="float" />
+
+        <argument
+            android:name="metode_pembayaran"
+            app:argType="string" />
+
+        <argument
+            android:name="total_dibayar"
+            app:argType="float" />
+
+        <argument
+            android:name="total_kembalian"
+            app:argType="float" />
+        <argument
+            android:name="barangList"
+            app:argType="com.neurallift.keuanganku.data.model.Barang" />
+
+        <argument
+            android:name="jumlahList"
+            app:argType="integer[]" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_detail_akun"
+        android:name="com.neurallift.keuanganku.ui.akun.fragment.DetailAkunFragment"
+        android:label="@string/detail_akun"
+        tools:layout="@layout/fragment_detail_akun"
+        >
+        <argument
+            android:name="akun_id"
+            app:argType="integer" />
+        <argument
+            android:name="akun_nama"
+            app:argType="string" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_kategori"
+        android:name="com.neurallift.keuanganku.ui.kategori.fragment.KategoriFragment"
+        android:label="@string/kategori"
+        tools:layout="@layout/fragment_kategori" />
+
+    <fragment
+        android:id="@+id/navigation_transaksi"
+        android:name="com.neurallift.keuanganku.ui.transaksi.fragment.TransaksiFragment"
+        android:label="@string/transaksi"
+        tools:layout="@layout/fragment_transaksi" />
+
+    <fragment
+        android:id="@+id/navigation_detail_transaksi"
+        android:name="com.neurallift.keuanganku.ui.transaksi.fragment.DetailTransaksiFragment"
+        android:label="@string/detail_transaksi"
+        tools:layout="@layout/fragment_detail_transaksi"
+        >
+        <argument
+            android:name="transaksi_id"
+            app:argType="integer" />
+    </fragment>
+
+
+    <fragment
+        android:id="@+id/navigation_laporan"
+        android:name="com.neurallift.keuanganku.ui.laporan.LaporanFragment"
+        android:label="@string/laporan"
+        tools:layout="@layout/fragment_laporan" />
+
+    <fragment
+        android:id="@+id/navigation_info"
+        android:name="com.neurallift.keuanganku.ui.info.InfoFragment"
+        android:label="@string/info_aplikasi"
+        tools:layout="@layout/fragment_info" />
+
+    <fragment
+        android:id="@+id/navigation_target"
+        android:name="com.neurallift.keuanganku.ui.target.TargetFragment"
+        android:label="@string/target_tabungan"
+        tools:layout="@layout/fragment_target" />
+
+    <fragment
+        android:id="@+id/navigation_notifikasi"
+        android:name="com.neurallift.keuanganku.ui.notifikasi.NotifikasiFragment"
+        android:label="@string/notifikasi_judul"
+        tools:layout="@layout/fragment_notifikasi" />
+
+    <fragment
+        android:id="@+id/navigation_pengaturan"
+        android:name="com.neurallift.keuanganku.ui.pengaturan.PengaturanFragment"
+        android:label="@string/pengaturan"
+        tools:layout="@layout/fragment_pengaturan" />
+</navigation>

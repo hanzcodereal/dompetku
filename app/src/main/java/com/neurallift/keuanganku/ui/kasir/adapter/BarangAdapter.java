@@ -95,7 +95,10 @@ public class BarangAdapter extends RecyclerView.Adapter<BarangAdapter.BarangView
             tvHarga.setText(FormatUtils.formatCurrency(barang.getHarga()));
             tvSatuan.setText(" / " + barang.getSatuan());
 
-            if (barang.getStok() > 0) {
+            if (barang.getStok() < 0) {
+                tvStok.setText(R.string.barang_stok_tidak_dilacak);
+                tvStok.setTextColor(itemView.getContext().getResources().getColor(R.color.colorSecondaryText));
+            } else if (barang.getStok() > 0) {
                 tvStok.setText(itemView.getContext().getString(R.string.barang_stok, barang.getStok()));
                 tvStok.setTextColor(itemView.getContext().getResources().getColor(R.color.colorSecondaryText));
             } else {

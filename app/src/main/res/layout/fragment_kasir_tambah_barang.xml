@@ -156,7 +156,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/card_background"
-                android:hint="Masukkan stok barang"
+                android:hint="Stok (isi 0 = tidak dilacak)"
                 android:inputType="number"
                 android:lines="1"
                 android:padding="12dp"

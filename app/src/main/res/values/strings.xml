@@ -1,0 +1,224 @@
+<resources>
+    <string name="app_name">DompetKu</string>
+    
+    <!-- Bottom Navigation -->
+    <string name="beranda">Beranda</string>
+    <string name="transaksi">Transaksi</string>
+    <string name="laporan">Laporan</string>
+    
+    <!-- Onboarding -->
+    <string name="lewati">Lewati</string>
+    <string name="lanjut">Lanjut</string>
+    <string name="selesai">Selesai</string>
+    <string name="onboarding_title_1">Kelola Keuangan Anda</string>
+    <string name="onboarding_desc_1">Catat semua transaksi keuangan Anda dengan mudah dan cepat menggunakan Dompetku</string>
+    <string name="onboarding_title_2">Pantau Penjualan dan Pembelian</string>
+    <string name="onboarding_desc_2">Kelola transaksi penjualan dan pembelian dalam satu aplikasi</string>
+    <string name="onboarding_title_3">Kelola Persediaan</string>
+    <string name="onboarding_desc_3">Pantau persediaan barang Anda dengan efisien dan akurat</string>
+    <string name="onboarding_title_4">Laporan Keuangan</string>
+    <string name="onboarding_desc_4">Dapatkan laporan laba rugi dan analisis keuangan dengan mudah</string>
+    <string name="onboarding_image">Gambar Onboarding</string>
+    
+    <!-- Home Screen -->
+    <string name="total_saldo">Saldo Tersedia</string>
+    <string name="pemasukan">Pemasukan</string>
+    <string name="pengeluaran">Pengeluaran</string>
+    <string name="ringkasan_keuangan">Ringkasan Keuangan</string>
+    <string name="keuangan">Keuangan</string>
+    <string name="transaksi_terakhir">Transaksi Terakhir</string>
+    <string name="tambah_transaksi">Tambah Transaksi</string>
+    <string name="edit_transaksi">Edit Transaksi</string>
+    <string name="empty_state_transaksi">Tidak ada transaksi saat ini</string>
+    <string name="harian">Harian</string>
+    <string name="mingguan">Mingguan</string>
+    <string name="bulanan">Bulanan</string>
+    
+    <!-- Transaksi Screen -->
+    <string name="semua_transaksi">Semua Transaksi</string>
+    <string name="filter_transaksi">Filter Transaksi</string>
+    <string name="kategori">Kategori</string>
+    <string name="akun">Akun</string>
+    <string name="jenis_transaksi">Jenis Transaksi</string>
+    <string name="nominal">Nominal</string>
+    <string name="masukkan_nominal">Masukkan nominal</string>
+    <string name="tanggal">Tanggal</string>
+    <string name="jam">Jam</string>
+    <string name="catatan">Catatan</string>
+    <string name="catatan_opsional">Catatan (Opsional)</string>
+    <string name="tambahkan_catatan">Tambahkan catatan</string>
+    <string name="batal">Batal</string>
+    <string name="simpan">Simpan</string>
+    <string name="perbarui">Perbarui</string>
+    <string name="edit">Edit</string>
+    <string name="hapus">Hapus</string>
+    <string name="pilih_kategori">Pilih Kategori</string>
+    <string name="pilih_akun">Pilih Akun</string>
+    <string name="pilih_satuan">Pilih Satuan</string>
+    <string name="periode">Periode</string>
+    <string name="tanggal_mulai">Tanggal Mulai</string>
+    <string name="tanggal_selesai">Tanggal Selesai</string>
+    <string name="reset">Reset</string>
+    <string name="terapkan">Terapkan</string>
+    <string name="tidak_ada_transaksi">Tidak ada transaksi</string>
+    <string name="konfirmasi_hapus">Hapus transaksi ini?</string>
+    <string name="transaksi_dihapus">Transaksi berhasil dihapus</string>
+    <string name="transaksi_disimpan">Transaksi berhasil disimpan</string>
+    <string name="transaksi_diperbarui">Transaksi berhasil diperbarui</string>
+    <string name="kategori_kosong">Kategori tidak boleh kosong</string>
+    <string name="akun_kosong">Akun tidak boleh kosong</string>
+    <string name="nominal_kosong">Nominal tidak boleh kosong</string>
+    <string name="jenis_kosong">Pilih jenis transaksi</string>
+
+    <!-- Akun Screen -->
+    <string name="daftar_akun">Daftar Akun</string>
+    <string name="edit_akun">Edit Akun</string>
+    <string name="tambah_akun">Tambah Akun</string>
+    <string name="nama_akun">Nama Akun</string>
+    <string name="masukkan_nama_akun">Masukkan nama akun</string>
+    <string name="saldo">Saldo</string>
+    <string name="tidak_ada_akun">Tidak ada akun</string>
+    <string name="ada_akun">Nama akun sudah ada</string>
+    <string name="akun_berhasil_disimpan">Akun berhasil disimpan</string>
+    <string name="akun_berhasil_dihapus">Akun berhasil dihapus</string>
+    <string name="nama_akun_kosong">Nama akun tidak boleh kosong</string>
+    <string name="konfirmasi_hapus_akun">Hapus akun ini? Semua transaksi pada akun ini juga akan terhapus.</string>
+    <string name="tambah_kategori">Tambah Kategori</string>
+    <string name="masukkan_nama">Masukkan Nama</string>
+
+    <!-- Kasir Screen -->
+    <string name="kasir">Kasir</string>
+    <string name="pembayaran">Pembayaran</string>
+    <string name="invoice">Invoice</string>
+    <string name="tambah_barang">Tambah Barang</string>
+    <string name="barang_disimpan">Barang berhasil disimpan</string>
+    <string name="tambah_satuan">Tambah Satuan</string>
+    <string name="tidak_ada_barang">Tidak ada barang</string>
+
+    <!-- Kategori Screen -->
+    <string name="daftar_kategori">Daftar Kategori</string>
+    <string name="edit_kategori">Edit Kategori</string>
+    <string name="nama_kategori">Nama Kategori</string>
+    <string name="masukkan_nama_kategori">Masukkan nama kategori</string>
+    <string name="tidak_ada_kategori">Tidak ada kategori</string>
+    <string name="ada_kategori">Nama kategori sudah ada</string>
+    <string name="kategori_berhasil_disimpan">Kategori berhasil disimpan</string>
+    <string name="kategori_berhasil_dihapus">Kategori berhasil dihapus</string>
+    <string name="nama_kategori_kosong">Nama akun tidak boleh kosong</string>
+    <string name="konfirmasi_hapus_kategori">Hapus kategori ini? Semua transaksi dengan kategori ini juga akan terhapus.</string>
+
+    <!-- Detail Akun -->
+    <string name="detail_akun">Detail Akun</string>
+    <string name="saldo_akhir">Saldo Akhir</string>
+    <string name="riwayat_transaksi">Riwayat Transaksi</string>
+    <string name="tidak_ada_transaksi_akun">Tidak ada transaksi untuk akun ini</string>
+
+    <!-- Detail Transaksi -->
+    <string name="detail_transaksi">Detail Transaksi</string>
+    <string name="share_detail_transaksi">Bagikan</string>
+    <string name="konfirmasi_hapus_transaksi">Hapus transaksi ini?</string>
+
+    <!-- Laporan Screen -->
+    <string name="periode_kustom">Periode Kustom</string>
+    <string name="total_pemasukan">Total Pemasukan</string>
+    <string name="total_pengeluaran">Total Pengeluaran</string>
+    <string name="laba_rugi">Laba/Rugi</string>
+    <string name="grafik_laba_rugi">Grafik Laba Rugi</string>
+    <string name="tidak_ada_data">Tidak ada data</string>
+
+    <!-- Info Aplikasi -->
+    <string name="info_aplikasi">Info Aplikasi</string>
+    <string name="info_nama_aplikasi">Nama Aplikasi</string>
+    <string name="info_versi">Versi</string>
+    <string name="info_developer">Developer</string>
+    <string name="info_developer_nama">Hanz Dev Official</string>
+    <string name="info_email">Email</string>
+    <string name="info_email_alamat">hanzzcodee@gmail.com</string>
+    <string name="info_email_subjek">Masukan untuk DompetKu</string>
+    <string name="info_dukungan">Dukung Developer</string>
+    <string name="info_dukungan_desc">Traktir developer lewat Saweria</string>
+    <string name="info_saweria_url">https://saweria.co/hanzreally</string>
+    <string name="info_data_judul">Data &amp; Akun</string>
+    <string name="info_data_isi">DompetKu tidak memerlukan login atau pendaftaran. \"Akun\" di aplikasi ini adalah akun keuangan seperti Kas, Bank, atau E-Wallet milik Anda sendiri. Semua data (akun, kategori, transaksi, dan barang) disimpan secara lokal di perangkat ini dan tidak dikirim ke server mana pun. Jika aplikasi dihapus atau data aplikasi dibersihkan, data ikut terhapus.</string>
+    <string name="info_tidak_ada_email">Tidak ada aplikasi email yang terpasang</string>
+    <string name="info_tidak_ada_browser">Tidak ada aplikasi browser yang terpasang</string>
+    <string name="gambar_disimpan">Gambar berhasil disimpan</string>
+    <string name="menu_utama">Menu utama</string>
+
+    <!-- Target Tabungan -->
+    <string name="target_tabungan">Target Tabungan</string>
+    <string name="target_tambah">Tambah Target</string>
+    <string name="target_edit">Edit Target</string>
+    <string name="target_nama">Nama Target</string>
+    <string name="target_nama_hint">Contoh: Liburan, Dana Darurat</string>
+    <string name="target_nominal">Jumlah Target</string>
+    <string name="target_tenggat_label">Tenggat (Opsional)</string>
+    <string name="target_pilih_tanggal">Pilih tanggal</string>
+    <string name="target_hapus_tenggat">Hapus tenggat</string>
+    <string name="target_nama_kosong">Nama target tidak boleh kosong</string>
+    <string name="target_nominal_tidak_valid">Jumlah target harus lebih dari 0</string>
+    <string name="target_kosong">Belum ada target tabungan</string>
+    <string name="target_kosong_hint">Ketuk tombol + untuk membuat target pertama Anda</string>
+    <string name="target_belum_ada">Belum ada target. Ketuk untuk membuat.</string>
+    <string name="target_ringkas">%1$d target • %2$d tercapai</string>
+    <string name="target_tambah_tabungan">Tambah Tabungan</string>
+    <string name="target_kurangi_tabungan">Kurangi Tabungan</string>
+    <string name="target_sisa">Sisa %1$s</string>
+    <string name="target_tercapai">Target tercapai</string>
+    <string name="target_selamat">Selamat, target tabungan tercapai!</string>
+    <string name="target_tenggat">Tenggat: %1$s</string>
+    <string name="target_tenggat_lewat">Tenggat: %1$s • terlewat</string>
+    <string name="target_tanpa_tenggat">Tanpa tenggat</string>
+    <string name="target_hapus_konfirmasi">Hapus target ini?</string>
+    <string name="target_disimpan">Target berhasil disimpan</string>
+    <string name="target_dihapus">Target berhasil dihapus</string>
+
+    <!-- Pengingat / Notifikasi -->
+    <string name="notifikasi_judul">Pengingat</string>
+    <string name="notifikasi_harian">Pengingat harian</string>
+    <string name="notifikasi_harian_desc">Ingatkan saya mencatat transaksi setiap hari</string>
+    <string name="notifikasi_target">Pengingat target tabungan</string>
+    <string name="notifikasi_target_desc">Setiap hari Senin, hanya jika ada target yang belum tercapai</string>
+    <string name="notifikasi_waktu">Waktu pengingat</string>
+    <string name="notifikasi_catatan">Pengingat tetap muncul walaupun aplikasi tidak dibuka. Jika HP Anda menghemat baterai secara ketat, izinkan DompetKu berjalan di latar belakang agar pengingat tidak terlambat.</string>
+    <string name="notifikasi_coba">Coba Kirim Notifikasi</string>
+    <string name="notifikasi_izin_ditolak">Izin notifikasi ditolak. Pengingat tidak dapat diaktifkan.</string>
+    <string name="notifikasi_dimatikan">Notifikasi DompetKu dimatikan di pengaturan HP. Aktifkan lewat Pengaturan &gt; Aplikasi &gt; DompetKu &gt; Notifikasi.</string>
+    <string name="notifikasi_diaktifkan">Pengingat diaktifkan</string>
+    <string name="notifikasi_channel_nama">Pengingat DompetKu</string>
+    <string name="notifikasi_channel_desc">Pengingat mencatat transaksi dan menabung</string>
+    <string name="notif_harian_judul">Waktunya catat keuangan</string>
+    <string name="notif_harian_isi">Sudah mencatat transaksi hari ini? Catat sekarang supaya keuangan Anda tetap rapi.</string>
+    <string name="notif_target_judul">Yuk menabung</string>
+    <string name="notif_target_satu">Target \"%1$s\" baru terkumpul %2$d%%. Sisa %3$s lagi, semangat!</string>
+    <string name="notif_target_banyak">Anda punya %1$d target tabungan yang belum tercapai. Yuk sisihkan sebagian uang minggu ini.</string>
+    <string name="notif_coba_judul">Notifikasi berhasil</string>
+    <string name="notif_coba_isi">Pengingat DompetKu berfungsi dengan baik.</string>
+
+    <!-- Pengaturan -->
+    <string name="pengaturan">Pengaturan</string>
+    <string name="pengaturan_tampilan">Tampilan</string>
+    <string name="pengaturan_tema">Tema</string>
+    <string name="pengaturan_pilih_tema">Pilih Tema</string>
+    <string name="tema_terang">Terang</string>
+    <string name="tema_gelap">Gelap</string>
+    <string name="tema_sistem">Ikuti sistem</string>
+    <string name="pengaturan_bahasa">Bahasa</string>
+    <string name="pengaturan_bahasa_nilai">Bahasa Indonesia</string>
+    <string name="pengaturan_fitur">Fitur</string>
+    <string name="pengaturan_tentang">Tentang</string>
+    <string name="pengaturan_info_aplikasi">Info Aplikasi</string>
+    <string name="pengaturan_versi_nilai">Versi %1$s</string>
+    <string name="pengaturan_hubungi">Hubungi Developer</string>
+
+    <!-- Stok & edit barang -->
+    <string name="barang_diperbarui">Barang berhasil diperbarui</string>
+    <string name="edit_barang">Edit Barang</string>
+    <string name="simpan_perubahan">Simpan Perubahan</string>
+    <string name="barang_stok">Stok: %1$d</string>
+    <string name="barang_stok_habis">Stok habis</string>
+    <string name="stok_habis_pesan">Stok %1$s habis</string>
+    <string name="stok_tersisa_pesan">Stok %1$s hanya tersisa %2$d</string>
+    <string name="stok_kosong">Stok barang tidak boleh kosong</string>
+    <string name="stok_terlalu_besar">Jumlah stok terlalu besar</string>
+</resources>

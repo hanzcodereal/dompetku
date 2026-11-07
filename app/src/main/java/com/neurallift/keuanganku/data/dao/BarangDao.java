@@ -23,7 +23,7 @@ public interface BarangDao {
     @Delete
     void delete(Barang barang);
 
-    @Query("UPDATE barang SET stok = MAX(stok - :jumlah, 0) WHERE id = :id")
+    @Query("UPDATE barang SET stok = MAX(stok - :jumlah, 0) WHERE id = :id AND stok >= 0")
     void kurangiStok(int id, int jumlah);
 
     @Query("SELECT * FROM barang")

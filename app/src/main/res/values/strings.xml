@@ -207,8 +207,8 @@
     <string name="pengaturan_bahasa_nilai">Bahasa Indonesia</string>
     <string name="pengaturan_fitur">Fitur</string>
     <string name="pengaturan_tentang">Tentang</string>
-    <string name="pengaturan_info_aplikasi">Info Aplikasi</string>
-    <string name="pengaturan_versi_nilai">Versi %1$s</string>
+    <string name="pengaturan_info_aplikasi">Versi Aplikasi</string>
+    <string name="pengaturan_versi_nilai">%1$s</string>
     <string name="pengaturan_hubungi">Hubungi Developer</string>
 
     <!-- Stok & edit barang -->

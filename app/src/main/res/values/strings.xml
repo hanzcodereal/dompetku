@@ -217,6 +217,7 @@
     <string name="simpan_perubahan">Simpan Perubahan</string>
     <string name="barang_stok">Stok: %1$d</string>
     <string name="barang_stok_habis">Stok habis</string>
+    <string name="barang_stok_tidak_dilacak">Stok tidak dilacak</string>
     <string name="stok_habis_pesan">Stok %1$s habis</string>
     <string name="stok_tersisa_pesan">Stok %1$s hanya tersisa %2$d</string>
     <string name="stok_kosong">Stok barang tidak boleh kosong</string>

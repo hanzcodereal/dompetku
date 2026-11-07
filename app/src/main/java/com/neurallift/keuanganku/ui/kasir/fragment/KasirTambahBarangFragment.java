@@ -39,6 +39,7 @@ public class KasirTambahBarangFragment extends Fragment {
     private String selectedSatuan = "";
     private Boolean isEditMode = false;
     private Barang editBarang;
+    private String stokAwalText = "";
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -52,6 +53,7 @@ public class KasirTambahBarangFragment extends Fragment {
                 isEditMode = true;
                 selectedKategori = editBarang.getKategori();
                 selectedSatuan = editBarang.getSatuan();
+                stokAwalText = String.valueOf(Math.max(editBarang.getStok(), 0));
             }
         }
     }
@@ -88,7 +90,7 @@ public class KasirTambahBarangFragment extends Fragment {
             btn_save.setText(R.string.simpan_perubahan);
             etNamaBarang.setText(editBarang.getNama());
             etHargaBarang.setText(String.valueOf((long) editBarang.getHarga()));
-            etStokBarang.setText(String.valueOf(editBarang.getStok()));
+            etStokBarang.setText(stokAwalText); // stok -1 (tidak dilacak) tampil sebagai 0
             tvKategori.setText(editBarang.getKategori());
             tvSatuan.setText(editBarang.getSatuan());
         }
@@ -149,6 +151,16 @@ public class KasirTambahBarangFragment extends Fragment {
         } catch (NumberFormatException e) {
             etStokBarang.setError(getString(R.string.stok_terlalu_besar));
             return;
+        }
+
+        // Stok 0 yang diketik = tidak dilacak (disimpan -1). Kalau saat edit kolom stok
+        // tidak diubah, nilai lama dipertahankan agar barang yang habis tidak berubah
+        // jadi "tidak dilacak" tanpa sengaja.
+        boolean stokTidakDiubah = isEditMode && editBarang != null && stokBarang.trim().equals(stokAwalText);
+        if (stokTidakDiubah) {
+            stok = editBarang.getStok();
+        } else if (stok == 0) {
+            stok = -1;
         }
 
         if(isEditMode && editBarang != null){

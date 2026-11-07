@@ -113,12 +113,12 @@ public class KasirFragment extends Fragment {
         barangAdapter.setOnItemClickListener(barang -> {
             int count = selectedBarangMap.getOrDefault(barang, 0);
 
-            // Batasi penjualan sesuai stok yang tersedia
-            if (barang.getStok() <= 0) {
+            // Batasi penjualan sesuai stok. Stok negatif (-1) = tidak dilacak, tanpa batas.
+            if (barang.getStok() == 0) {
                 Toast.makeText(getContext(), getString(R.string.stok_habis_pesan, barang.getNama()), Toast.LENGTH_SHORT).show();
                 return;
             }
-            if (count + 1 > barang.getStok()) {
+            if (barang.getStok() > 0 && count + 1 > barang.getStok()) {
                 Toast.makeText(getContext(), getString(R.string.stok_tersisa_pesan, barang.getNama(), barang.getStok()), Toast.LENGTH_SHORT).show();
                 return;
             }

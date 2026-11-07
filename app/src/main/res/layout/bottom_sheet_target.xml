@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <View
+        android:layout_width="40dp"
+        android:layout_height="4dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_handle_strip" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="@string/target_tambah"
+        android:textAppearance="@style/TextAppearance.Dompetku.Headline6"
+        android:textColor="@color/colorPrimaryText" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/target_nama"
+                android:textAppearance="@style/TextAppearance.Dompetku.Body2"
+                android:textColor="@color/colorPrimaryText" />
+
+            <EditText
+                android:id="@+id/etNamaTarget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/card_background"
+                android:hint="@string/target_nama_hint"
+                android:inputType="textCapWords"
+                android:maxLines="1"
+                android:padding="12dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textColorHint="@color/colorSecondaryText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/target_nominal"
+                android:textAppearance="@style/TextAppearance.Dompetku.Body2"
+                android:textColor="@color/colorPrimaryText" />
+
+            <EditText
+                android:id="@+id/etNominalTarget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/card_background"
+                android:hint="@string/masukkan_nominal"
+                android:inputType="number"
+                android:maxLength="13"
+                android:maxLines="1"
+                android:padding="12dp"
+                android:textColor="@color/colorPrimaryText"
+                android:textColorHint="@color/colorSecondaryText" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="@string/target_tenggat_label"
+                android:textAppearance="@style/TextAppearance.Dompetku.Body2"
+                android:textColor="@color/colorPrimaryText" />
+
+            <TextView
+                android:id="@+id/tvTenggatTarget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="@drawable/card_background"
+                android:padding="12dp"
+                android:text="@string/target_pilih_tanggal"
+                android:textColor="@color/colorSecondaryText"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tvHapusTenggat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:background="?attr/selectableItemBackground"
+                android:padding="8dp"
+                android:text="@string/target_hapus_tenggat"
+                android:textColor="@color/colorExpense"
+                android:textSize="13sp"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btnSimpanTarget"
+                style="@style/Widget.MaterialComponents.Button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/simpan"
+                android:textColor="@color/colorOnPrimary"
+                app:backgroundTint="@color/colorPrimary" />
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

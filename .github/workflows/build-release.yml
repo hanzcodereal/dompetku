@@ -15,9 +15,6 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      # Android SDK sudah terpasang di runner ubuntu-latest (ANDROID_HOME),
-      # jadi tidak perlu setup-android. Cukup terima lisensi agar Gradle
-      # bisa mengunduh komponen SDK yang kurang.
       - name: Terima lisensi Android SDK
         run: yes | "$ANDROID_HOME/cmdline-tools/latest/bin/sdkmanager" --licenses > /dev/null || true
 
